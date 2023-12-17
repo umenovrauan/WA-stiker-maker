@@ -35,6 +35,7 @@ struct ContentView: View {
                 }
             }
         }
+        .preferredColorScheme(.dark)
         .navigationTitle("WA Stiker Maker")
         .toolbar{
             ToolbarItem(placement: .primaryAction) {
