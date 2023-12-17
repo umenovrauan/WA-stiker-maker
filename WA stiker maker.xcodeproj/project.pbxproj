@@ -11,6 +11,14 @@
 		02292EA52B2EF2B600DA5959 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EA42B2EF2B600DA5959 /* ContentView.swift */; };
 		02292EA72B2EF2B700DA5959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02292EA62B2EF2B700DA5959 /* Assets.xcassets */; };
 		02292EAA2B2EF2B700DA5959 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02292EA92B2EF2B700DA5959 /* Preview Assets.xcassets */; };
+		02292EB22B2EF52E00DA5959 /* ImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EB12B2EF52E00DA5959 /* ImageContainerView.swift */; };
+		02292EB62B2EFACD00DA5959 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EB52B2EFACD00DA5959 /* ImagePicker.swift */; };
+		02292EB82B2EFFC000DA5959 /* ImageVisionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EB72B2EFFC000DA5959 /* ImageVisionHelper.swift */; };
+		02292EBA2B2F084800DA5959 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EB92B2F084800DA5959 /* ViewModel.swift */; };
+		02292EBC2B2F0AA800DA5959 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EBB2B2F0AA800DA5959 /* Models.swift */; };
+		02292EBF2B2F1A5300DA5959 /* SwiftWebP in Frameworks */ = {isa = PBXBuildFile; productRef = 02292EBE2B2F1A5300DA5959 /* SwiftWebP */; };
+		02292EC12B2F1A5300DA5959 /* YYImageLib in Frameworks */ = {isa = PBXBuildFile; productRef = 02292EC02B2F1A5300DA5959 /* YYImageLib */; };
+		02292EC32B2F1BA400DA5959 /* UIIMage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02292EC22B2F1BA400DA5959 /* UIIMage+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		02292EA42B2EF2B600DA5959 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		02292EA62B2EF2B700DA5959 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02292EA92B2EF2B700DA5959 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02292EB02B2EF34100DA5959 /* WA-stiker-maker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WA-stiker-maker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		02292EB12B2EF52E00DA5959 /* ImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainerView.swift; sourceTree = "<group>"; };
+		02292EB52B2EFACD00DA5959 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		02292EB72B2EFFC000DA5959 /* ImageVisionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVisionHelper.swift; sourceTree = "<group>"; };
+		02292EB92B2F084800DA5959 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		02292EBB2B2F0AA800DA5959 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		02292EC22B2F1BA400DA5959 /* UIIMage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02292EC12B2F1A5300DA5959 /* YYImageLib in Frameworks */,
+				02292EBF2B2F1A5300DA5959 /* SwiftWebP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +68,15 @@
 		02292EA12B2EF2B600DA5959 /* WA stiker maker */ = {
 			isa = PBXGroup;
 			children = (
+				02292EB72B2EFFC000DA5959 /* ImageVisionHelper.swift */,
+				02292EB02B2EF34100DA5959 /* WA-stiker-maker-Info.plist */,
 				02292EA22B2EF2B600DA5959 /* WA_stiker_makerApp.swift */,
 				02292EA42B2EF2B600DA5959 /* ContentView.swift */,
+				02292EB92B2F084800DA5959 /* ViewModel.swift */,
+				02292EC22B2F1BA400DA5959 /* UIIMage+Extensions.swift */,
+				02292EBB2B2F0AA800DA5959 /* Models.swift */,
+				02292EB12B2EF52E00DA5959 /* ImageContainerView.swift */,
+				02292EB52B2EFACD00DA5959 /* ImagePicker.swift */,
 				02292EA62B2EF2B700DA5959 /* Assets.xcassets */,
 				02292EA82B2EF2B700DA5959 /* Preview Content */,
 			);
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = "WA stiker maker";
+			packageProductDependencies = (
+				02292EBE2B2F1A5300DA5959 /* SwiftWebP */,
+				02292EC02B2F1A5300DA5959 /* YYImageLib */,
+			);
 			productName = "WA stiker maker";
 			productReference = 02292E9F2B2EF2B600DA5959 /* WA stiker maker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 02292E962B2EF2B600DA5959;
+			packageReferences = (
+				02292EBD2B2F1A5300DA5959 /* XCRemoteSwiftPackageReference "SwiftWebP" */,
+			);
 			productRefGroup = 02292EA02B2EF2B600DA5959 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +168,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02292EB82B2EFFC000DA5959 /* ImageVisionHelper.swift in Sources */,
+				02292EB22B2EF52E00DA5959 /* ImageContainerView.swift in Sources */,
+				02292EB62B2EFACD00DA5959 /* ImagePicker.swift in Sources */,
 				02292EA52B2EF2B600DA5959 /* ContentView.swift in Sources */,
+				02292EBA2B2F084800DA5959 /* ViewModel.swift in Sources */,
 				02292EA32B2EF2B600DA5959 /* WA_stiker_makerApp.swift in Sources */,
+				02292EBC2B2F0AA800DA5959 /* Models.swift in Sources */,
+				02292EC32B2F1BA400DA5959 /* UIIMage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +312,13 @@
 				DEVELOPMENT_TEAM = Z36RZZRV83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WA-stiker-maker-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Select photo to convert to stiker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +343,13 @@
 				DEVELOPMENT_TEAM = Z36RZZRV83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WA-stiker-maker-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Select photo to convert to stiker";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +385,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02292EBD2B2F1A5300DA5959 /* XCRemoteSwiftPackageReference "SwiftWebP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SwiftWebP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02292EBE2B2F1A5300DA5959 /* SwiftWebP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02292EBD2B2F1A5300DA5959 /* XCRemoteSwiftPackageReference "SwiftWebP" */;
+			productName = SwiftWebP;
+		};
+		02292EC02B2F1A5300DA5959 /* YYImageLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02292EBD2B2F1A5300DA5959 /* XCRemoteSwiftPackageReference "SwiftWebP" */;
+			productName = YYImageLib;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02292E972B2EF2B600DA5959 /* Project object */;
 }

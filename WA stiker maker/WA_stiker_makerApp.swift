@@ -11,7 +11,9 @@ import SwiftUI
 struct WA_stiker_makerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack{
+                ContentView()
+            }
         }
     }
 }
